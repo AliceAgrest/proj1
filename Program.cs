@@ -1,18 +1,23 @@
-using System;
+﻿using System;
 
-namespace MyApp // Note: actual namespace depends on the project name.
+namespace proj 
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a Tal's score for the {0} game: ", i+1);
+            //answer 1
+            /*int tal, taltotal = 0, roi, roitotal = 0 , i;
+
+            for(i = 1;1 <= 5;i+=1 )
+            { 
+                Console.WriteLine("Enter a Tal's score for the {0} game: ", i+1);
                 tal = int.Parse(Console.ReadLine());
                 Console.WriteLine("Enter a Roi's score for the {0} game: ", i + 1);
                 roi = int.Parse(Console.ReadLine());
 
                 if (tal > roi)
-                    Console.WriteLine(tal);
+                    Console.WriteLine("Tal");
                 else
                     Console.WriteLine("Roi");
 
@@ -24,7 +29,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 Console.WriteLine("Tal");
             else
                 Console.WriteLine("Roi");
-
+            
             //answer 2
             int num;
 
@@ -33,12 +38,41 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 if (num % 3 == 0)
                     Console.WriteLine(" " + num);
             }
-            */
+
             //answer 3
-            int s;
+            int num1 , total = 0;
             Random rnd = new Random();
 
-            s = rnd.Next(100)+1;
+            for(int a = 0;a <= 20; a+=1)
+            {
+                num1 = rnd.Next(100) + 1;
+                //Console.WriteLine(" " + num1);
+                if (num1 > 70)
+                    Console.WriteLine("This number is bigger then 70: " + num1);
+
+                total += num1;
+            }
+            total = total / 20;
+            Console.WriteLine("Average of random numbers is "+ total);
+            */
+            //answer 4
+            int humen1 = 0, humen2 = 0;
+            Random rnd1 = new Random();
+
+            for (int c = 0; c <= 3; c+=1)
+            {
+                c = rnd1.Next(6) + 1;
+                humen1 = c;
+            }
+            for (int v = 0; v <= 3; v += 1)
+            {
+                v = rnd1.Next(6) + 1;
+                humen2 = v;
+            }
+            if (humen1 > humen2)
+                Console.WriteLine("The winner is the first humen");
+            else
+                Console.WriteLine("The winner is the second humen");
 
             Console.ReadLine();
         }
