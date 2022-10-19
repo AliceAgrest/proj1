@@ -59,21 +59,21 @@ namespace proj
             int humen1 = 0, humen2 = 0;
             Random rnd1 = new Random();
 
-            for (int c = 0; c <= 3; c+=1)
+            for (int c = 0; c < 3; c+=1)
             {
-                c = rnd1.Next(6) + 1;
-                humen1 = c;
+                humen1 = rnd1.Next(6) + 1;
+                Console.WriteLine(" " + humen1);
             }
-            for (int v = 0; v <= 3; v += 1)
+            for (int v = 0; v < 3; v += 1)
             {
-                v = rnd1.Next(6) + 1;
-                humen2 = v;
+                humen2 = rnd1.Next(6) + 1;
+                Console.WriteLine(" " + humen2);
             }
             if (humen1 > humen2)
                 Console.WriteLine("The winner is the first humen");
             else
                 Console.WriteLine("The winner is the second humen");
-
+            
             Console.ReadLine();
         }
     }
