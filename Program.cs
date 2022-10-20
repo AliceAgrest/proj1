@@ -56,16 +56,13 @@ namespace proj
             Console.WriteLine("Average of random numbers is "+ total);
             */
             //answer 4
-            int humen1 = 0, humen2 = 0;
+            /*int humen1 = 0, humen2 = 0;
             Random rnd1 = new Random();
 
-            for (int c = 0; c < 3; c+=1)
+            for (int c = 0; c < 3; c += 1)  
             {
                 humen1 = rnd1.Next(6) + 1;
                 Console.WriteLine(" " + humen1);
-            }
-            for (int v = 0; v < 3; v += 1)
-            {
                 humen2 = rnd1.Next(6) + 1;
                 Console.WriteLine(" " + humen2);
             }
@@ -73,7 +70,51 @@ namespace proj
                 Console.WriteLine("The winner is the first humen");
             else
                 Console.WriteLine("The winner is the second humen");
-            
+            */
+
+            //answer 5
+            int n ,count5 = 0, count6 = 0, count7 = 0, total3 = 0;
+            Random rnd2 = new Random();
+
+            Console.WriteLine("Enter a number of loops: ");
+            n = int.Parse(Console.ReadLine());
+
+            for (int r = 0; r <= n;r++)
+            {
+                int x = rnd2.Next(5, 8);
+                Console.WriteLine(" " + x);
+
+                if (x == 5)
+                    count5 += 1;
+
+                else if (x == 6)
+                    count6 += 1;
+
+                else
+                    count7 += 1;
+
+                total3 += x;
+            }
+            if (count5 > count6 && count5 > count7)
+                Console.WriteLine("The most drawed number is 5");
+            else if (count6 > count5 && count6 > count7)
+                Console.WriteLine("The most drawed number is 6");
+            else
+                Console.WriteLine("The most drawed number is 7");
+
+            total3 = total3 / n;
+            Console.WriteLine("The averege of all numbers is: " + total3);
+
+            Console.WriteLine("The biggest number is 7");
+
+            //answer 6
+            int nume, nume2;
+            Console.WriteLine("Enter the basis number ");
+            nume = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the estimator number ");
+            nume2 = int.Parse(Console.ReadLine());
+
+
             Console.ReadLine();
         }
     }
