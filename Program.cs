@@ -7,7 +7,7 @@ namespace proj
         static void Main(string[] args)
         {
             //answer 1
-            /*int tal, taltotal = 0, roi, roitotal = 0 , i;
+            int tal, taltotal = 0, roi, roitotal = 0 , i;
 
             for(i = 1;1 <= 5;i+=1 )
             { 
@@ -54,9 +54,9 @@ namespace proj
             }
             total = total / 20;
             Console.WriteLine("Average of random numbers is "+ total);
-            */
+            
             //answer 4
-            /*int humen1 = 0, humen2 = 0;
+            int humen1 = 0, humen2 = 0;
             Random rnd1 = new Random();
 
             for (int c = 0; c < 3; c += 1)  
@@ -105,7 +105,7 @@ namespace proj
             Console.WriteLine("The averege of all numbers is: " + total3);
 
             Console.WriteLine("The biggest number is 7");
-            */
+            
             //answer 6
             int nume, nume2, totaln;
             Console.WriteLine("Enter the basis number ");
