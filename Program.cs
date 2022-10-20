@@ -70,7 +70,6 @@ namespace proj
                 Console.WriteLine("The winner is the first humen");
             else
                 Console.WriteLine("The winner is the second humen");
-            */
 
             //answer 5
             int n ,count5 = 0, count6 = 0, count7 = 0, total3 = 0;
@@ -106,14 +105,21 @@ namespace proj
             Console.WriteLine("The averege of all numbers is: " + total3);
 
             Console.WriteLine("The biggest number is 7");
-
+            */
             //answer 6
-            int nume, nume2;
+            int nume, nume2, totaln;
             Console.WriteLine("Enter the basis number ");
             nume = int.Parse(Console.ReadLine());
+            totaln = nume;
             Console.WriteLine("Enter the estimator number ");
             nume2 = int.Parse(Console.ReadLine());
 
+            for (int w = 0; w < nume2; w ++)
+            {
+                nume = nume + totaln;
+                
+            }
+            Console.WriteLine("The exponent is " + nume);
 
             Console.ReadLine();
         }
