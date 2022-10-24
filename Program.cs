@@ -7,7 +7,7 @@ namespace proj
         static void Main(string[] args)
         {
             //answer 1
-            int tal, taltotal = 0, roi, roitotal = 0 , i;
+            /*int tal, taltotal = 0, roi, roitotal = 0 , i;
 
             for(i = 1;1 <= 5;i+=1 )
             { 
@@ -105,21 +105,20 @@ namespace proj
             Console.WriteLine("The averege of all numbers is: " + total3);
 
             Console.WriteLine("The biggest number is 7");
-            
+            */
             //answer 6
-            int nume, nume2, estimator;
+            int nume, nume2, estimator = 1;
             Console.WriteLine("Enter the basis number ");
             nume = int.Parse(Console.ReadLine());
-            estimator = nume;
             Console.WriteLine("Enter the estimator number ");
             nume2 = int.Parse(Console.ReadLine());
 
-            for (int w = 1; w < nume2; w ++)
+            for (int w = 0; w < nume2; w ++)
             {
-                nume = nume * estimator;
+                estimator = nume * estimator;
                 
             }
-            Console.WriteLine("The exponent is " + nume);
+            Console.WriteLine("The exponent is " + estimator);
 
             Console.ReadLine();
         }
